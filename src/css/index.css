@@ -181,11 +181,16 @@ nav.sticky{
   z-index: 1;
   border-radius: 5px;
 }
-.dropdown-content a{
+.dropdown-content button{
   width: 100%;
   display: block;
+  background: var(--secondary);
+  color: white;
+  border: none;
+  padding: 5px 3px;
+  cursor: pointer;
 }
-.dropdown-content a:hover{
+.dropdown-content button:hover{
   background: var(--info);
   transition: .5s;
 }
@@ -268,6 +273,7 @@ nav.sticky{
 }
 .swiper-wrapper{
   padding-bottom: 20px !important;
+  height: 77%!important;
 }
 .swiper-container{
   width: 50% !important;

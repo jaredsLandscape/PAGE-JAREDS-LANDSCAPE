@@ -6,7 +6,7 @@ import ImgSlider2 from "../img/img-slider-2.jpg"
 import ImgSlider3 from "../img/img-slider-3.jpg"
 import ImgSlider4 from "../img/img-slider-4.jpg"
 
-export default function About(){
+export default function About({leng}){
 
     useEffect(()=> {
         const fade = document.querySelectorAll('.fade');
@@ -31,12 +31,14 @@ export default function About(){
         // QUIENES SOMOS
         <section id="quienes_somos">
             <div className="quienes_somos_info">
-                <h2 className="fade">¿Quiénes somos?</h2>
-                <p className="fade">
-                Jared’s Landscape es un proyecto de emprendimiento familiar, que busca brindar 
-            un servicio de calidad y satisfacción para el cliente.<br/>
-            Nacimos en el 2012 en la ciudad de Hillsborg Oregon y con el paso de los años hemos logrado crecer, en 2016 nos expandimos y asociamos para mejorar nuestros estándares de servicio, contamos con el conocimiento y la mejor disposición para ayudarte, reinventándonos en todo momento para brindarte un mejor servicio.
-                </p>
+                <h2 className="fade">{leng==='es'?"¿Quiénes somos?": "About us"}</h2>
+                {leng==='es'?(
+                    <p className="fade">Jared’s Landscape es un proyecto de emprendimiento familiar, que busca brindar 
+                    un servicio de calidad y satisfacción para el cliente.<br/>
+                    Nacimos en el 2012 en la ciudad de Hillsborg Oregon y con el paso de los años hemos logrado crecer, en 2016 nos expandimos y asociamos para mejorar nuestros estándares de servicio, contamos con el conocimiento y la mejor disposición para ayudarte, reinventándonos en todo momento para brindarte un mejor servicio.</p>
+                ): <p>Jared’s Landscape is a family business project that seeks to provide 
+                quality service and customer satisfaction.<br/>
+                We were born in 2012 in the city of Hillsborg Oregon and over the years we have managed to grow, in 2016 we expanded and partnered to improve our service standards, we have the knowledge and the best disposition to help you, reinventing ourselves at all times to provide you with a better service.</p>}
             </div>
             {/* SLIDER */}
             <div className="quienes_somos_slide">
@@ -71,7 +73,7 @@ export default function About(){
                 </SwiperSlide>
             </Swiper>
                 <div className="slogan">
-                    <p>Transformamos cualquier espacio en un lugar acogedor, atractivo y confortable, comprometiendonos contigo y el cuidado de tu propiedad.</p>
+                    <p>{leng === 'es'?"Transformamos cualquier espacio en un lugar acogedor, atractivo y confortable, comprometiendonos contigo y el cuidado de tu propiedad.":"We transform any space into a welcoming, attractive and comfortable place, committing ourselves to you and the care of your property."}</p>
                 </div>
             </div>
         </section>

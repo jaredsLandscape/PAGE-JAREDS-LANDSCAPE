@@ -15,18 +15,25 @@ const App = () => {
     window.location = "/"
   }
   const [cookie, setCookie] = useState()
+  const [lenguague, setLenguague] = useState('es')
 
   useEffect(() => {
     setCookie(JSON.parse(localStorage.getItem("terms")))
+    localStorage.setItem('lenguague', JSON.stringify('es'))
+    setLenguague(JSON.parse(localStorage.getItem("lenguague")))
   },[cookie])
   
+  const selectLenguague = (leng)=> {
+    localStorage.setItem('lenguague', JSON.stringify(leng)) 
+    setLenguague(JSON.parse(localStorage.getItem("lenguague")))
+  }
+
   return (
     <div>
         {/* TERMINOS Y CONDICIONES */}
         {!cookie ? (<div>
                 <div id="terminos" className="terminos_condiciones">
-                    <p>Este sitio web hace uso de cookies, al navegar en el estas aceptando el uso de cookies 
-                y los terminos de privacidad<a href="./terminos.php" target="_blank">Terminos y condiciones.</a></p>
+                    <p>{lenguague==='es'?"Este sitio web hace uso de cookies, al navegar en el estas aceptando el uso de cookies y los terminos de privacidad":"This website uses cookies, by browsing you are accepting the use of cookies and the privacy terms"}<a href="./terminos.php" target="_blank">Terminos y condiciones.</a></p>
                     <button className="btn_terminos" onClick={handleCookie}>OK</button>
                 </div>  
         </div>): null}
@@ -36,13 +43,13 @@ const App = () => {
             <MessIcon/>
         </a>
 
-        <Nav/>
+        <Nav handLenguague={selectLenguague} leng={lenguague}/>
         <Header/>
-        <About/>
-        <Services/>
-        <Contact/>
-        <Testimonials/>
-        <Footer/>
+        <About leng={lenguague}/>
+        <Services leng={lenguague}/>
+        <Contact leng={lenguague}/>
+        <Testimonials leng={lenguague}/>
+        <Footer leng={lenguague}/>
     </div>
   );
 };

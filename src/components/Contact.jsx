@@ -7,33 +7,33 @@ import {ReactComponent as EmailIcon} from "../SVG/email.svg"
 import {ReactComponent as PhoneIcon} from "../SVG/phone.svg"
 import {ReactComponent as MessageIcon} from "../SVG/comentario.svg"
 
-export default function Contact(){
+export default function Contact({leng}){
    return(
         // CONTACTO
         <section id="contacto">
         <div className="container-contacto">
-            <h2 className="fade">Proceso de contratacion</h2>
+            <h2 className="fade">{leng==='es'?"Proceso de contratacion":"Recruitment process"}</h2>
             <div className="fade container-passeds">
                 <div className="passed-1 passed">
                     <h3>Paso 1</h3>
                     <div className="passeds-img">
                         <StepCallIcon width={90} height={90}/>
                     </div>
-                    <p>Contactanos para resolver dudas y agendar visita a la propiedad.</p>
+                    <p>{leng==='es'?"Contactanos para resolver dudas y agendar visita a la propiedad.":"Contact us to answer questions and schedule a visit to the property."}</p>
                 </div>
                 <div className="passed-2 passed">
                     <h3>Paso 2</h3>
                     <div className="passeds-img">
                         <StepCotIcon width={60}/>
                     </div>
-                    <p>Después de la visita realizamos el estimado y enviamos por email todos los detalles.</p>
+                    <p>{leng==='es'?"Después de la visita realizamos el estimado y enviamos por email todos los detalles.":"After the visit, we make the estimate and send all the details by email."}</p>
                 </div>
                 <div className="passed-3 passed">
                     <h3>Paso 3</h3>
                     <div className="passeds-img">
                         <StepAgenIcon width={90}/>
                     </div>
-                    <p>Agendar el dia  para iniciar el servicio.</p>
+                    <p>{leng==='es'?"Agendar el dia  para iniciar el servicio.":"Schedule the date to start the service."}</p>
                 </div>
             </div>
         </div>
@@ -45,31 +45,33 @@ export default function Contact(){
                     <input type="text" name="nombre" required/><span className="barra"></span>
                     <label>
                         <UserIcon width={20}/>
-                        Nombre
+                        {leng==='es'?"Nombre":"Name"}
                     </label>
                 </div>
                 <div className="grupo">
                     <input type="email" name="mail" required/><span className="barra"></span>
                     <label>
                         <EmailIcon width={20}/>
-                        Correo electronico
+                        
+                        {leng==='es'?"Correo electronico":"Email"}
                     </label>
                 </div>
                 <div className="grupo">
                     <input type="tel" name="phone"/><span className="barra"></span>
                     <label>
                         <PhoneIcon width={15}/>
-                        Teléfono
+                        
+                        {leng==='es'?"Teléfono":"Phone"}
                     </label>
                 </div>
                 <div className="grupo">
                     <textarea name="comentario" rows="3"></textarea><span className="barra"></span>
                     <label>
                         <MessageIcon width={20}/>
-                        Dejanos un comentario
+                        {leng==='es'?"Dejanos un comentario":"Leave us a comment"}
                     </label>
                 </div>
-                <button  type="submit">Enviar</button>
+                <button  type="submit">{leng==='es'?"Enviar":"Send"}</button>
             </div>
         </form>
     </section>
