@@ -7,6 +7,7 @@ import Nav from "./components/Nav";
 import Services from "./components/Services";
 import Testimonials from "./components/Testimonials";
 import {ReactComponent as MessIcon} from './SVG/mensaje.svg'
+import { Link } from "react-router-dom";
 
 const App = () => {
 
@@ -33,7 +34,7 @@ const App = () => {
         {/* TERMINOS Y CONDICIONES */}
         {!cookie ? (<div>
                 <div id="terminos" className="terminos_condiciones">
-                    <p>{lenguague==='es'?"Este sitio web hace uso de cookies, al navegar en el estas aceptando el uso de cookies y los terminos de privacidad":"This website uses cookies, by browsing you are accepting the use of cookies and the privacy terms"}<a href="./terminos.php" target="_blank">Terminos y condiciones.</a></p>
+                    <p>{lenguague==='es'?"Este sitio web hace uso de cookies, al navegar en el estas aceptando el uso de cookies y los terminos de privacidad":"This website uses cookies, by browsing you are accepting the use of cookies and the privacy terms"}<Link to="/terms" target="_blank">Terminos y condiciones.</Link></p>
                     <button className="btn_terminos" onClick={handleCookie}>OK</button>
                 </div>  
         </div>): null}

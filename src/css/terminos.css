@@ -1,0 +1,90 @@
+:root{
+    --text: #49474d;
+    --dark: rgb(0, 0, 0);
+    --primary: #004b22;
+    --secondary: #c9a35a;
+    --info: #866b3c;
+    --light: #fff;
+    --sombras: rgb(0, 0, 0, .8);
+    --filtros: rgb(0, 0, 0, .3);
+}
+
+/* TIPOGRAFIAS */
+@font-face{
+    font-family: Lato-Bold;
+    src: url(../tipografias/Lato-Bold.ttf);
+    font-display: swap;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: Lato-Bold;
+}
+
+h2{
+    font-size: 4rem;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.terminos_condiciones{
+    width: 80%;
+    margin: 50px 0;
+    margin: auto;
+}
+
+.terminos_condiciones h1{
+    font-size: 4rem;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.terminos_condiciones{
+    font-size: 1rem;
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+
+/* DROPDOWN */
+.drop{
+    float: right;
+}
+.dropdown{
+    list-style-type: none;
+}
+.dropdown-btn{
+    background: var(--secondary);
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    color: var(--light);
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background: var(--secondary);
+    min-width: 70px;
+    box-shadow: 5px 5px 5px var(--sombras);
+    z-index: 1;
+    border-radius: 5px;
+}
+.dropdown-content a{
+    width: 100%;
+    padding: 5px;
+    text-decoration: none;
+    display: block;
+    color: var(--light);
+}
+.dropdown-content a:hover{
+    background: var(--info);
+    transition: .5s;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.dropdown:hover .dropdown-btn{
+    background-color:var(--info);
+}

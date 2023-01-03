@@ -2,6 +2,7 @@ import React from "react";
 import {ReactComponent as UbicIcon} from '../SVG/ubicacion.svg'
 import {ReactComponent as FacebookIcon} from '../SVG/facebook.svg'
 import {ReactComponent as InstagramIcon} from '../SVG/instagram.svg'
+import { Link } from "react-router-dom";
 
 export default function Footer({leng}){
     return(
@@ -22,7 +23,7 @@ export default function Footer({leng}){
                     <UbicIcon className="icon-ubicacion"/></a>
                 </p>
                 <p className="datos_footer">
-                    <a href="terminos.php" target="_blank">{leng==='es'?"Terminos y condiciones.":"Terms and Conditions"}</a>
+                    <Link to="/terms">{leng==='es'?"Terminos y condiciones.":"Terms and Conditions"}</Link>
                 </p>
             </div>
             <div>   
