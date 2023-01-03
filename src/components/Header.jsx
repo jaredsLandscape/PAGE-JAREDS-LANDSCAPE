@@ -8,7 +8,7 @@ export default function Header(){
             <div className="info">
                 <h1>JARED´S</h1>
                 <p>LANDSCAPE MAINTENANCE</p>
-                <a href="tel:+19712752277" target="_blank">Teléfono: 971-275-2277</a>
+                <a href="tel:+19712752277" target="_blank" rel="noreferrer">Teléfono: 971-275-2277</a>
             </div>
         </header>
     )
