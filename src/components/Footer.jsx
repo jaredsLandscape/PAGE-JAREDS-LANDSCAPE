@@ -15,10 +15,10 @@ export default function Footer(){
             </div>
             <div>
                 <p className="datos_footer">
-                    <a href="tel:+19712752277" target="_blank">Contactanos: 971-275-2277.</a>
+                    <a href="tel:+19712752277" target="_blank" rel="noreferrer">Contactanos: 971-275-2277.</a>
                 </p>
                 <p className="datos_footer">
-                    <a href="https://g.page/jaredslandscape?gm" target="_blank">Google My Business.
+                    <a href="https://g.page/jaredslandscape?gm" target="_blank" rel="noreferrer">Google My Business.
                     <UbicIcon className="icon-ubicacion"/></a>
                 </p>
                 <p className="datos_footer">
@@ -28,8 +28,8 @@ export default function Footer(){
             <div>   
                 <p>Siguenos en nuestras redes sociales:</p>
                 <div className="redes-sociales">
-                    <a href="https://www.facebook.com/Jareds-Landscape-Maintenace-107385467821779/" target="_blank"> <FacebookIcon width={40}/></a>
-                    <a href="https://www.instagram.com/jaredslandscape/?igshid=jimq9vjweep3" target="_blank">     <InstagramIcon width={40}/></a>
+                    <a href="https://www.facebook.com/Jareds-Landscape-Maintenace-107385467821779/" target="_blank" rel="noreferrer"> <FacebookIcon width={40}/></a>
+                    <a href="https://www.instagram.com/jaredslandscape/?igshid=jimq9vjweep3" target="_blank" rel="noreferrer">     <InstagramIcon width={40}/></a>
                 </div>
             </div>
         </footer> 

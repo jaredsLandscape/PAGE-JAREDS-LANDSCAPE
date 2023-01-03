@@ -27,7 +27,7 @@ const App = () => {
                 <div id="terminos" className="terminos_condiciones">
                     <p>Este sitio web hace uso de cookies, al navegar en el estas aceptando el uso de cookies 
                 y los terminos de privacidad<a href="./terminos.php" target="_blank">Terminos y condiciones.</a></p>
-                    <a className="btn_terminos" onClick={handleCookie}>OK</a>
+                    <button className="btn_terminos" onClick={handleCookie}>OK</button>
                 </div>  
         </div>): null}
 

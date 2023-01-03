@@ -167,6 +167,9 @@ nav.sticky{
 .dropdown-btn{
   background: var(--secondary);
   border-radius: 10px;
+  padding: 5px 3px;
+  border: none;
+  color: var(--light);
   cursor: pointer;
 }
 .dropdown-content{

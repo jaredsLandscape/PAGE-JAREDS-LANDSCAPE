@@ -10,7 +10,7 @@ export default function Testimonials(){
             <div className="container">
                 <h2 className="fade">Testimonios</h2>
                 <hr className="fade"/>
-                <input type="radio" name="slides" id="radio1" checked/>
+                <input type="radio" name="slides" id="radio1" />
                 <input type="radio" name="slides" id="radio2"/>
                 <input type="radio" name="slides" id="radio3"/>
                 <ul className="slides fade">

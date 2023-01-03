@@ -33,10 +33,10 @@ export default function Nav(){
                 <li><a className="btn-underline" href="#testimonios">Testimonios</a></li>
                 {/* DRODOWN */}
                 <li className="dropdown">
-                    <a className="dropdown-btn">
+                    <button className="dropdown-btn">
                         <SVGIconArrow width={15}/>
                         Idioma
-                    </a>  
+                    </button>  
                     <div className="dropdown-content">
                         <a href="index.php?lang=es">Español</a>
                         <a href="index.php?lang=en">Inglés</a>
