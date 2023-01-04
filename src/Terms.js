@@ -1,8 +1,7 @@
 import React from "react";
 import ArrowSVG from './SVG/arrow-down.svg'
 import {useEffect, useState} from 'react'
-import './css/terminos.css'
-import './css/index.css'
+// import './css/terminos.css'
 
 export default function Terms(){
 
@@ -30,8 +29,8 @@ export default function Terms(){
                                 {lenguague === 'es'?"Lenguaje": "Lenguague"}
                             </button>  
                             <div className="dropdown-content">
-                                <button onClick={selectLenguague}>{lenguague === 'es'?"Español":"Spanish"}</button>
-                                <button onClick={selectLenguague}>{lenguague === 'es'?"Inglés":"English"}</button>
+                                <button onClick={() => selectLenguague('es')}>{lenguague === 'es'?"Español":"Spanish"}</button>
+                                <button onClick={() => selectLenguague('en')}>{lenguague === 'es'?"Inglés":"English"}</button>
                             </div>
                         </li>
                     </ul>

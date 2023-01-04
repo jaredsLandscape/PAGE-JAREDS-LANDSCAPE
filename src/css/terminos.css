@@ -30,10 +30,31 @@ h2{
     margin: 50px 0;
 }
 
-.terminos_condiciones{
+#terminos{
     width: 80%;
+    margin: auto;
+}
+
+.terminos_condiciones{
+    width: 100%;
     margin: 50px 0;
     margin: auto;
+}
+
+button{
+    width: 100%;
+    display: block;
+    padding: 5px 3px;
+    border: none;
+    background: var(--secondary);
+    transition: all .3s ease-in-out;
+}
+
+button:hover{
+    display: block;
+    padding: 5px 3px;
+    border: none;
+    background: var(--info);
 }
 
 .terminos_condiciones h1{
