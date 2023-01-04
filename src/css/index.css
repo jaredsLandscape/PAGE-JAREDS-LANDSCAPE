@@ -96,8 +96,11 @@ h3{
 }
 
 /* MENU PARA DISPOSITIVOS MOVILES */
-#menu{
+/* #menu{
   display: none;
+} */
+input[type="checkbox"]{
+  opacity: 0;
 }
 .checkbtn{
   display: none;
@@ -956,6 +959,7 @@ footer p{
   .menu li{
       display: block;
   }
+  
   nav{
       padding: 5% 8%;
   }
@@ -1003,6 +1007,7 @@ footer p{
   }
 
   /* QUIENES SOMOS */
+  .quienes_somos_slide{ width: 100%;height: 50vh; }
   #quienes_somos{
       flex-direction: column;
       height: 135vh;
@@ -1018,6 +1023,7 @@ footer p{
   }
   .quienes_somos_info{
       width: 90%;
+      height: 45vh;
   }
   .swiper-container{
       width: 95%;
@@ -1061,6 +1067,9 @@ footer p{
   #contacto h2 {
       text-align: center;
       padding-top: 80px;
+  }
+  .card-info{
+    padding-top: 65px;
   }
   .container-passeds{
       flex-direction: column;
@@ -1127,7 +1136,6 @@ footer p{
   footer{
       height: 70vh;
   }
-  .quienes_somos_slide{ width: 100%!important;height: 70vh; }
 }
 
 .text-red-primary{

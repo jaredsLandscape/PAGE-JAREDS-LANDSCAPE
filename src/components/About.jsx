@@ -35,10 +35,10 @@ export default function About({leng}){
                 {leng==='es'?(
                     <p className="fade">Jared’s Landscape es un proyecto de emprendimiento familiar, que busca brindar 
                     un servicio de calidad y satisfacción para el cliente.<br/>
-                    Nacimos en el 2012 en la ciudad de Hillsborg Oregon y con el paso de los años hemos logrado crecer, en 2016 nos expandimos y asociamos para mejorar nuestros estándares de servicio, contamos con el conocimiento y la mejor disposición para ayudarte, reinventándonos en todo momento para brindarte un mejor servicio.</p>
+                    Nacimos en el 2012 en la ciudad de Hillsboro Oregon y con el paso de los años hemos logrado crecer, en 2016 nos expandimos y asociamos para mejorar nuestros estándares de servicio, contamos con el conocimiento y la mejor disposición para ayudarte, reinventándonos en todo momento para brindarte un mejor servicio.</p>
                 ): <p>Jared’s Landscape is a family business project that seeks to provide 
                 quality service and customer satisfaction.<br/>
-                We were born in 2012 in the city of Hillsborg Oregon and over the years we have managed to grow, in 2016 we expanded and partnered to improve our service standards, we have the knowledge and the best disposition to help you, reinventing ourselves at all times to provide you with a better service.</p>}
+                We were born in 2012 in the city of Hillsboro Oregon and over the years we have managed to grow, in 2016 we expanded and partnered to improve our service standards, we have the knowledge and the best disposition to help you, reinventing ourselves at all times to provide you with a better service.</p>}
             </div>
             {/* SLIDER */}
             <div className="quienes_somos_slide">

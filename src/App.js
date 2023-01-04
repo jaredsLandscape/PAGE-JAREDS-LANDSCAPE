@@ -21,7 +21,7 @@ const App = () => {
 
   useEffect(() => {
     setCookie(JSON.parse(localStorage.getItem("terms")))
-    localStorage.setItem('lenguague', JSON.stringify('es'))
+    localStorage.setItem('lenguague', JSON.stringify('en'))
     setLenguague(JSON.parse(localStorage.getItem("lenguague")))
   },[cookie])
   
